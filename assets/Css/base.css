@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+:root {
+    --white-color : #fff;
+    --black-color : #000;
+    --text-color : #444;
+    --border-color : #dbdbdb;
+    --primary-color : #002878;
+    --header-height : 80px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+.app {
+    overflow: hidden;
+}
+
+
+/* Button */
+
+.btn {
+    min-width: 124px;
+    height: 36px;
+    border: none;
+    padding: 0 12px;
+    text-decoration: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.btn.btn--disabled {
+    cursor: default;
+    background-color: #c3c3c3;
+    color: #949494;
+}
+.btn.btn--size-s {
+    font-size: 1.2rem;
+    height: 32px;
+    padding: 0 8px;
+}
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/* Animation */
+@keyframes FadeIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes Submenu {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Modal layout */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    animation: FadeIn linear 0.1s;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    --grow-from: 0.7;
+    --grow-to : 1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: grows linear 0.1s;
+}
