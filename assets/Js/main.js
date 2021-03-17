@@ -1,6 +1,8 @@
 window.addEventListener("scroll", function () {
-  var header = document.querySelector("#header");
+  let header = document.querySelector("#header");
+  let header_mobile = document.querySelector(".header-mobile")
   header.classList.toggle("sticky", window.scrollY >= 40);
+  header_mobile.classList.toggle("change-bg", window.scrollY > 0);
 });
 $(document).ready(function () {
     var owl = $('.owl-carousel');

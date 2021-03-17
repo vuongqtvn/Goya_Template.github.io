@@ -1,8 +1,67 @@
+@media (max-width: 990px) {
+    #header {
+        display: none;
+    }
+    .header-topbar {
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+    }
+}
+
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    .footer-policy  {
+        text-align: center;
+    }
+    .copyright {
+        margin-top: 12px;
+        text-align: center;
+    }
 }
 /* mobile */
 @media (max-width: 740px) {
+    .section-banner-container {
+        padding: 0 15px;
+    }
+    .section-bestSelling-container {
+        padding: 0 30px;
+    }
+    .section-trending-container {
+        padding: 0 30px;
+    }
+    .section-visit-img {
+        padding: 0 15px;
+    }
+    .footer-container {
+        padding: 0 30px;
+    }
+    .footer-contact-form {
+        flex-wrap: wrap;
+    }
+    .footer-policy  {
+        text-align: center;
+    }
+    .footer-policy a {
+        display: block;
+    }
+    .footer-policy a:first-child {
+        margin-right: unset;
+      }
+    .copyright {
+        margin-top: 12px;
+        text-align: center;
+    }
+    .footer-form-input {
+        width: 100%;
+        margin-bottom: 10px;
+        min-width: unset;
+    }
+    .footer-form-btn {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
