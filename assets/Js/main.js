@@ -21,3 +21,14 @@ $(document).ready(function () {
         owl.trigger('stop.owl.autoplay')
     })
 });
+let menu = document.querySelector('.header-menu')
+let slider = document.querySelector('.slider-mobile')
+console.log(slider)
+menu.addEventListener("click",()=>{
+    slider.classList.add("active")
+})
+let mobile_close = document.querySelector('.slider-mobile-close')
+console.log(mobile_close)
+mobile_close.addEventListener("click",()=> {
+    slider.classList.remove("active")
+})

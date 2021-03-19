@@ -781,3 +781,118 @@ footer {
 .header-mobile-icon {
   font-size: 24px;
 }
+
+
+/* Slider mobile */
+
+.slider-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+  padding: 70px 50px 50px;
+  z-index: 100;
+  transition: all 0.3s linear;
+}
+.slider-mobile.active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: inherit;
+  transition: all 0.3s linear;
+}
+.slider-mobile-left {
+  width: 355px;
+}
+.slider-mobile-list {
+  height: 475px;
+  border-bottom: 1px solid black;
+}
+.slider-mobile-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.slider-mobile-link {
+  position: relative;
+  font-size: 18px;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.slider-mobile-item i {
+  font-size: 22px;
+  color: var(--text-color);
+  display: inline-block;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+.slider-mobile-item:hover .slider-mobile-link::after {
+  width: 100%;
+} 
+.slider-mobile-item:hover .slider-mobile-item i {
+  background-color:#f2f2f2;
+}
+.slider-mobile-link::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s linear;
+}
+.slider-mobile-close {
+  position: absolute;
+  top: 35px;
+  transform: translateY(-50%);
+  
+}
+.slider-mobile-close i {
+  font-size: 30px;
+  display: inline-block;
+  padding: 8px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+
+}
+.slider-language-info {
+  margin-top: 40px;
+  display: flex;
+  align-items: baseline;
+
+}
+
+.slider-language-title {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.slider-language-info p {
+  font-size: 14px;
+  margin-left: 15px;
+}
+.slider-language-info p i {
+  font-size: 18px;
+}
+.slider-social-list {
+  margin-top: 30px;
+}
+
+.slider-social-list i {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
