@@ -88,6 +88,12 @@
     .menu-mobile-container {
         padding: 0 30px;
     }
+    .footer-navlist {
+        text-align: center;
+    }
+    .follow-social-list {
+        justify-content: center;
+    }
 }
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
