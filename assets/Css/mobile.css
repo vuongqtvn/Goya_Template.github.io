@@ -8,6 +8,9 @@
     .section-trending .row {
         margin: 0;
     }
+    footer .row {
+        margin: 0;
+    }
 }
 @media (max-width: 990px) {
     #header {
