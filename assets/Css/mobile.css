@@ -1,3 +1,14 @@
+@media (min-width: 1240px) {
+    .section-banner .row {
+        margin: 0;
+    }
+    .section-best-selling .row {
+        margin: 0;
+    }
+    .section-trending .row {
+        margin: 0;
+    }
+}
 @media (max-width: 990px) {
     #header {
         display: none;
